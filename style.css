@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* A good practice for layout */
+}
+
+body {
+    background-color: #f7f7f7; /* A softer background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A cleaner font */
+    text-align: center; /* Center all text content */
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem; /* Vertically centers the text in the header */
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+.choice:hover {
+    cursor: pointer; /* Indicates the element is clickable */
+    background-color: #081b31;
+}
+
+.choice:hover img {
+    transform: scale(1.1);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+.score {
+    color: #081b31;
+}
+
+#user-score,
+#computer-score {
+    font-size: 4rem; /* Larger font for the score numbers */
+}
+
+.score p:last-child {
+    font-size: 1.5rem; /* Smaller text for "You" and "AI" */
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+.msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block; /* Allows padding and background to fit the text */
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
